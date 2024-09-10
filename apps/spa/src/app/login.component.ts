@@ -4,12 +4,21 @@ import { provideIcons } from '@ng-icons/core';
 import { lucideGithub, lucideLoader } from '@ng-icons/lucide';
 import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
 import { HlmIconComponent } from '@spartan-ng/ui-icon-helm';
+import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
+import { HlmLabelDirective } from '@spartan-ng/ui-label-helm';
 import { HlmSpinnerComponent } from '@spartan-ng/ui-spinner-helm';
 
 @Component({
 	selector: 'app-auth-example-form',
 	standalone: true,
-	imports: [HlmButtonDirective, HlmIconComponent, HlmSpinnerComponent, FormsModule],
+	imports: [
+		HlmButtonDirective,
+		HlmInputDirective,
+		HlmLabelDirective,
+		HlmIconComponent,
+		HlmSpinnerComponent,
+		FormsModule,
+	],
 	host: {
 		class: 'block',
 	},
